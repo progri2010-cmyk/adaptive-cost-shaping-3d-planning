@@ -1,0 +1,9 @@
+Adaptive Cost Shaping for 3D Path Planning:
+A Hybrid A* Approach with Neural Cost Modulation
+
+Genti Progri^1
+^1University of Elbasan, genti.progri@uniel.edu.al
+
+Abstract
+This paper presents a comprehensive study of adaptive cost shaping integrated into classical A* search for 3D path planning. We propose a novel adaptive lambda strategy where the cost modulation factor dynamically adjusts based on learned environmental risk estimates. The framework maintains the optimality guarantees of A* while leveraging a neural environment model trained via backpropagation to predict obstacle probabilities with validation accuracy up to 100%. Extensive experiments across 11 environment configurations (structured, unstructured, and mixed) demonstrate that adaptive lambda achieves up to 17.6× speedup compared to fixed lambda in feasible environments (e.g., 0.319s vs 5.602s in empty environments), while maintaining optimal path length. In infeasible environments, adaptive lambda shows 1.4–1.6× slowdown versus baseline, confirming our theoretical analysis that learned local cost models cannot detect global infeasibility—a structural limitation. Results are validated over multiple runs with statistical aggregation, and all code and models are open-sourced for reproducibility.
+Keywords: Path Planning, A* Search, Cost Shaping, Neural Networks, 3D Navigation, Adaptive Algorithms
